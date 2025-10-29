@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Supermercado com as melhores ofertas e produtos de qualidade.">
+    <title>Supermercado do Luíz - Qualidade e desconto para você</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #f85b12;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #fd7e43;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #df581a;
+            color: rgb(255, 255, 255);
+        }
+
+        .banner {
+            width: 100%;
+            height: 300px;
+            background-image: url('/banner-de-contracao-de-supermercado-desenhado-a-mao_23-2149365586.avif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .offers {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .offer {
+            border: 1px solid #f85b12;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease; /* Efeito de destaque */
+        }
+
+        /* Efeito de zoom nas imagens ao passar o mouse */
+        .offer img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease; /* Suavidade no efeito de zoom */
+        }
+
+        .offer:hover img {
+            transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+        }
+
+        footer {
+            background-color: #f85b12;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Ajuste para telas menores */
+        @media (max-width: 768px) {
+            .offer {
+                width: 45%; /* Duas ofertas por linha em telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .offer {
+                width: 100%; /* Uma oferta por linha em telas bem pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Supermercado do Luíz</h1>
+        <p>Os melhores preços e descontos e a qualidade que você merece!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="/fale_conosco.html">Contato</a>
+        <a href="#sobre">Sobre Nós</a>
+    </nav>
+
+    <div class="banner">
+        <!-- Banner do supermercado -->
+    </div>
+
+    <div class="content">
+        <h2>Bem-vindo ao Supermercado do Luíz!</h2>
+        <p>Confira nossas ofertas exclusivas e aproveite os melhores valores de compra abaixo.</p>
+
+        <div class="offers" id="ofertas">
+            <div class="offer">
+                <img src="/refrigerante_de_guarana_350ml_jesus_13079_1_444254b4a56b3ae55d5726762ea64227.webp" alt="Produto A">
+                <h3>Guaraná Jesus Refrigerante Lata 350ml.</h3>
+                <p>R$ 5,20</p>
+            </div>
+            <div class="offer">
+                <img src="/pó de café.jfif" alt="Produto B">
+                <h3>Pó de Café União Tradicional 500g.</h3>
+                <p>R$ 20,99</p>
+            </div>
+            <div class="offer">
+                <img src="/221712-800-auto.webp" alt="Produto C">
+                <h3>Refrigerante Coca-Cola 6un 350ml.</h3>
+                <p>R$ 18,50</p>
+            </div>
+
+        </div>
+        <div class="offers" id="ofertas">
+            <div class="offer">
+                <img src="/584747.webp" alt="Produto A">
+                <h3>Arroz Tipo 1 Prato Fino 5kg.</h3>
+                <p>R$ 37,99</p>
+            </div>
+            <div class="offer">
+                <img src="/l-3e62b6ea08e54b1d8aee84da93c6aa67.jpeg" alt="Produto B">
+                <h3>Óleo de Soja Liza 900ml.</h3>
+                <p>R$ 6,89</p>
+            </div>
+            <div class="offer">
+                <img src="/chocolate.jfif" alt="Produto C">
+                <h3>Barra de Chocolate Classic Ao Leite 80G Nestlé.</h3>
+                <p>R$ 7,69</p>
+            </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Supermercado do Luíz - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

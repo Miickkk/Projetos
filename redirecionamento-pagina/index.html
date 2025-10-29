@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Cidades populares</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #9c66ce;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+img {
+    width:100%
+}
+
+section li a {
+    color:#9c66ce
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 2800px; /* only for demonstration, should be removed */
+  background: hsl(272, 100%, 90%);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #ffffff;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #9c66ce;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Cidades populares</h2>
+<p>Aqui, você pode descobrir algumas das cidades mais populares e atrativas do mundo. Oferecemos uma visão geral das principais culturas, atrações e experiências únicas.</p>
+<p>Venha explorar e se deixar levar pela diversidade e beleza das cidades mais icônicas!</p>
+
+<header>
+  <h2>Cidades que Contam Histórias</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#secao1">Singapura</a></li>
+      <li><a href="#secao2">Paris</a></li>
+      <li><a href="#secao3">Tokyo</a></li>
+      <li><a href="#secao4">Abu Dhabi</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 id="secao1"></h2>
+    <h1>Singapura</h1>
+    <p>Singapura é uma ensolarada ilha tropical localizada no sudeste da Ásia, no extremo sul da Península Malaia. A cidade-estado tem 710 quilômetros quadrados.</p>
+    <p>É habitada por cinco milhões de pessoas de quatro comunidades principais: os chineses (a maioria), os malaios, os indianos e os eurásios.</p>
+    <img src="/1.jpg" alt="Italian Trulli" width="500px" height="auto">
+  </article>
+
+  <article>
+    <h2 id="secao2"></h2>
+    <h1>Paris</h1>
+    <p>Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena.</p>
+    <p>A cidade é conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do século XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas.</p>
+    <img src="/2.webp" alt="Italian Trulli" width="500px" height="auto">
+  </article>
+
+  <article>
+    <h2 id="secao3"></h2>
+    <h1>Tokyo</h1>
+    <p>Tóquio, a movimentada capital do Japão, combina o estilo ultramoderno com o tradicional, desde arranha-céus iluminados por neon a templos históricos.</p>
+    <p>O opulento santuário xintoísta Meiji é conhecido por seu altíssimo portão e pelas florestas circundantes. O Palácio Imperial fica localizado em meio a jardins públicos.</p>
+    <img src="/3.webp" alt="Italian Trulli" width="500px" height="auto">
+  </article>
+
+  <article>
+    <h2 id="secao4"></h2>
+    <h1>Abu Dhabi</h1>
+    <p>Abu Dhabi, a capital dos Emirados Árabes Unidos, fica fora do continente, em uma ilha do Golfo Pérsico (Árabe). A cidade tem como foco a exportação de petróleo e o comércio.</p>
+    <p>Com modernos arranha-céus e megacentros de compras, como os shoppings Abu Dhabi e Marina.</p>
+    <img src="/4.webp" alt="Italian Trulli" width="500px" height="auto">
+  </article>
+</section>
+
+</body>
+</html>
+

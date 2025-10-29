@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato conosco.">
+    <title>Guitar Mania - Fale Conosco</title>
+    <link rel="icon" type="image/x-icon" href="/Black and White Minimalist Professional Initial Logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #4d1515;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #af3535;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #4d1515;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #af3535;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #af3535;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #4d1515;
+        }
+
+        footer {
+            background-color: #4d1515;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guitar Mania</h1>
+        <p>Entre em contato conosco</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="fale_conosco.html">Fale Conosco</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#sobre">Sobre Nós</a>
+    </nav>
+
+    <div class="container">
+        <h2>Fale Conosco</h2>
+        <p>Se você tiver qualquer dúvida, sugestão ou problema, preencha o formulário abaixo. Nós responderemos o mais rápido possível.</p>
+
+        <form action="#" method="POST">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Digite o assunto" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Digite sua mensagem" required></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Guitar Mania - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

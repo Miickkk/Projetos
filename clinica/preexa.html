@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Clínica Médica ILUUMINÉ</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/logo iluumine.png">
+  </head>
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 800px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        color: #167d7f;
+        font-size: 32px;
+    }
+
+    .prescription-form,
+    .exam-form {
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        height: 100px;
+    }
+
+    .form-group button {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #167d7f;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .form-group button:hover {
+        background-color: #005959;
+    }
+
+    .uploaded-exams {
+        margin-top: 30px;
+    }
+
+    .uploaded-exam-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .uploaded-exam-item p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+    }
+</style>
+
+  <body class="p-5 m-0 border-0 bd-example m-0 border-0">
+        
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+              <img src="/logo iluumine.png" alt="Bootstrap" width="70" height="70">
+              <a class="navbar-brand" class="text-left">Clínica ILUUMINÉ</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/medico.html">Início</a>
+                  </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/agenda.html">Agenda de consultas</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="/infopaci.html">Informações dos pacientes</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="/obspron.html">Observações dos prontuários</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="/preexa.html">Prescrições e exames</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="/uploud.html">Upload de resultados</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="/histmedi.html">Histórico medico</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="/loginpaci.html">Paciente</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="/loginsecre.html">Secretária</a>
+                  </li>
+    
+                </li>
+              </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </br>
+
+  <div class="container">
+    <header>
+    <h1>Prescrição e Exames - Clínica Médica</h1>
+    </header>
+     
+    <div class="prescription-form">
+    <h2>Gerar Prescrição Médica</h2>
+    <form id="prescription-form">
+    <div class="form-group">
+    <label for="medication">Medicamento Prescrito</label>
+    <input type="text" id="medication" name="medication" required placeholder="Digite o nome do medicamento">
+    </div>
+     
+                    <div class="form-group">
+    <label for="dose">Dose</label>
+    <input type="text" id="dose" name="dose" required placeholder="Digite a dosagem">
+    </div>
+     
+                    <div class="form-group">
+    <label for="instructions">Instruções de Uso</label>
+    <textarea id="instructions" name="instructions" required placeholder="Digite as instruções de uso"></textarea>
+    </div>
+     
+                    <div class="form-group">
+    <button type="submit">Gerar Prescrição</button>
+    </div>
+    </form>
+    </div>
+     
+    <div class="exam-form">
+    <h2>Solicitar Exame</h2>
+    <form id="exam-form">
+    <div class="form-group">
+    <label for="exam-name">Nome do Exame</label>
+    <input type="text" id="exam-name" name="exam-name" required placeholder="Digite o nome do exame">
+    </div>
+     
+                    <div class="form-group">
+    <label for="exam-instructions">Instruções para o Exame</label>
+    <textarea id="exam-instructions" name="exam-instructions" required placeholder="Digite as instruções para o exame"></textarea>
+    </div>
+     
+                    <div class="form-group">
+    <button type="submit">Solicitar Exame</button>
+    </div>
+    </form>
+    </div>
+     
+    <div class="upload-exam-form">
+    <h2>Upload de Resultados de Exames</h2>
+    <form id="upload-exam-form">
+    <div class="form-group">
+    <label for="exam-file">Selecione o Arquivo de Resultado</label>
+    <input type="file" id="exam-file" name="exam-file" accept=".pdf,.jpg,.png,.jpeg,.docx" required>
+    </div>
+     
+                    <div class="form-group">
+    <button type="submit">Fazer Upload</button>
+    </div>
+    </form>
+    </div>
+     
+    <div class="uploaded-exams">
+    <h2>Resultados de Exames Carregados</h2>
+
+    <div class="uploaded-exam-item">
+    <p><strong>Exame:</strong> Hemograma Completo</p>
+    <p><strong>Arquivo:</strong> <a href="#">Resultado_Hemograma.pdf</a></p>
+    </div>
+    <div class="uploaded-exam-item">
+    <p><strong>Exame:</strong> Ressonância Magnética</p>
+    <p><strong>Arquivo:</strong> <a href="#">Resultado_RM.jpg</a></p>
+    </div>
+    </div>
+     
+            <footer>
+    <p>&copy; 2024 Clínica Médica. Todos os direitos reservados.</p>
+    </footer>
+    </div>
+     
+        <script>
+            document.getElementById('prescription-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+     
+                const medication = document.getElementById('medication').value;
+                const dose = document.getElementById('dose').value;
+                const instructions = document.getElementById('instructions').value;
+     
+                if (!medication || !dose || !instructions) {
+                    alert("Por favor, preencha todos os campos.");
+                    return;
+                }
+     
+                alert("Prescrição médica gerada com sucesso!");
+                document.getElementById('prescription-form').reset(); 
+            });
+     
+            document.getElementById('exam-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+     
+                const examName = document.getElementById('exam-name').value;
+                const examInstructions = document.getElementById('exam-instructions').value;
+     
+                if (!examName || !examInstructions) {
+                    alert("Por favor, preencha todos os campos.");
+                    return;
+                }
+     
+                alert("Exame solicitado com sucesso!");
+                document.getElementById('exam-form').reset(); 
+            });
+     
+            document.getElementById('upload-exam-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+     
+                const fileInput = document.getElementById('exam-file');
+     
+                if (!fileInput.files.length) {
+                    alert("Por favor, selecione um arquivo.");
+                    return;
+                }
+     
+                const fileName = fileInput.files[0].name;
+                alert("Resultado do exame carregado com sucesso!");
+     
+                const uploadedExams = document.querySelector('.uploaded-exams');
+                const newExamItem = document.createElement('div');
+                newExamItem.classList.add('uploaded-exam-item');
+                newExamItem.innerHTML = `<p><strong>Exame:</strong> ${fileName}</p><p><strong>Arquivo:</strong> <a href="#">${fileName}</a></p>`;
+                uploadedExams.appendChild(newExamItem);
+     
+                document.getElementById('upload-exam-form').reset(); 
+            });
+    </script>
+
+</body>
+</html>

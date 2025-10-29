@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet&Gatô</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0e0fd;
+        }
+
+        header {
+            background-color: #c57eff;
+            padding: 10px 0;
+            color: #45166b;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #8e47c9;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: center;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddb4ff;
+            color: #ffffff;
+        }
+
+        .banner {
+            width: 100%;
+            height: 420px;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #45166b;
+        }
+
+        footer {
+            background-color: #8e47c9;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 200px) {
+            .offer {
+                width: 45%; 
+            }
+        }
+
+        @media (max-width: 200px) {
+            .offer {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Pet&Gatô</h1>
+            <p>Cuidando do seu pet com carinho e dedicação que ele merece!</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="/fale_conosco.html">Contato</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="carousel">
+        <div class="carousel-images" id="carouselImages">
+            <img src="/1.png" alt="Imagem 1">
+            <img src="/2.png" alt="Imagem 2">
+            <img src="/3.png" alt="Imagem 3">
+            <img src="/4.png" alt="Imagem 4">
+            <img src="/5.png" alt="Imagem 5">
+        </div>
+    
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>    
+
+    </section>
+
+    <section id="servicos" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-item">
+            <img src="/1+.jpg" alt="Banho e Tosa">
+            <h3>Banho e Tosa</h3>
+            <p>Cuidamos da higiene e aparência do seu pet com todo o carinho.</p>
+        </div>
+        <div class="service-item">
+            <img src="/2+.jpg" alt="Veterinária">
+            <h3>Veterinária</h3>
+            <p>Atendimento especializado para a saúde do seu pet.</p>
+        </div>
+        <div class="service-item">
+            <img src="/3+.jpg" alt="Pet Sitting">
+            <h3>Pet Sitting</h3>
+            <p>Cuidamos do seu pet quando você estiver ausente.</p>
+        </div>
+        <div class="service-item">
+            <img src="/5+.jpg" alt="Creche para Pets">
+            <h3>Creche para Pets</h3>
+            <p>Um lugar divertido e seguro para o seu pet passar o dia.</p>
+        </div>
+    </section>
+
+    <section id="produtos" class="products">
+        <h2>Produtos em Destaque</h2>
+        <div class="product-item">
+            <img src="/a+.png" alt="Ração Premium">
+            <h3>Ração Premium para Cães</h3>
+            <p>A partir de R$ 219,90</p>
+        </div>
+        <div class="product-item">
+            <img src="/b+.jpg" alt="Brinquedos para Gatos">
+            <h3>Brinquedos para Gatos</h3>
+            <p>A partir de R$ 55,90</p>
+        </div>
+        <div class="product-item">
+            <img src="/c+.jpg" alt="Camas para Pets">
+            <h3>Camas confortáveis para Pets</h3>
+            <p>A partir de R$ 179,55</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Depoimentos de Clientes</h2>
+        <div class="testimonial-item">
+            <img src="/n+.avif" alt="Cliente 1">
+            <p>"O melhor lugar para cuidar do meu cachorro! Sempre volto satisfeita." – Larissa S.</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="/m+.jpg" alt="Cliente 2">
+            <p>"A equipe é muito atenciosa, e meus gatos adoram os produtos." – Robert D.</p>
+        </div>
+    </section>
+
+    <section id="sobre-nos" class="about-us">
+        <h2>Sobre Nós</h2>
+        <img src="/Design sem nome.png" alt="Sobre Nós">
+        <p>No <strong>Pet&Gatô</strong>, nossa missão é oferecer os melhores produtos e serviços para garantir a saúde e bem-estar dos seus pets. Com anos de experiência no mercado, nossa equipe especializada está pronta para atender todas as necessidades do seu animalzinho.</p>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Entre em Contato</h2>
+        <p><strong>Telefone:</strong> (19) 987-77855</p>
+        <p><strong>E-mail:</strong> pet&gato@seudominio.com.br</p>
+        <p><strong>Endereço:</strong> Rua Boa Morte, 123, Limeira/SP</p>
+        <p><strong>Horário de Funcionamento:</strong> Segunda a Sábado, das 9h às 18h</p>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="#" style="color:#f0e0fd">Instagram</a>
+            <a href="#" style="color:#f0e0fd">Facebook</a>
+        </div>
+        <p>Copyright © 2024 Pet&Gatô. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+    
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n - 1);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.querySelectorAll('.carousel-images img');
+            let dots = document.querySelectorAll('.dot');
+    
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+    
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+    
+            dots.forEach((dot) => {
+                dot.classList.remove('active');
+            });
+    
+            slides[slideIndex].style.display = 'block';
+            dots[slideIndex].classList.add('active');
+        }
+    
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000); // Muda a cada 5 segundos
+    </script>
+
+</body>
+</html>
