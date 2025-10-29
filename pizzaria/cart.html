@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - La Roma Pizzaria</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Loja de Informática</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+                <li><a href="/Loja_informatica2/Loja_informatica/produtos.html">Produtos</a></li>
+                <li><a href="cadastre-se.html">Contato</a></li>
+                <li><a href="cart.html">Carrinho</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Seu Carrinho</h1>
+  </header>
+
+  <main>
+    <div class="cart-items">
+      <!-- Itens do carrinho serão adicionados aqui -->
+    </div>
+    <div class="cart-total">
+      <p>Total: R$ <span id="total-price">0</span></p>
+    </div>
+    <button onclick="finalizarCompra()" id="finalize-order">Finalizar Pedido</button>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

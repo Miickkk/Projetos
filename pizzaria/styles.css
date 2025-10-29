@@ -1,0 +1,222 @@
+/* Reset de estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #b11925;
+    background-color: #ffd2d5;
+}
+
+/* Navbar */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #b11925;
+    padding: 12px 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Carrossel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 10s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 150px; /* Ajuste a altura do carrossel conforme necessário */
+    object-fit: cover;
+}
+
+/* Produtos */
+.products {
+    padding: 20px;
+    background-color: #ffd2d5;
+}
+
+.products-pizza {
+    padding: 1px;
+    background-color: #ffd2d5;
+    text-align: left;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.products h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-cards {
+    display: grid;
+    gap: 30px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.logo {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #ce2b3971;
+}
+
+.card img {
+    width: 20%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.card .btn {
+    padding: 10px;
+    background-color: #f4a71a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card .btn:hover {
+    background-color: #ffd992;
+}
+
+/* Detalhe do Produto */
+.product-detail {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffd2d5;
+}
+
+.product-image img {
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-info .add-to-cart {
+    padding: 15px 20px;
+    background-color: #f4a71a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.product-info .add-to-cart:hover {
+    background-color: #fabc49;
+}
+
+/* Cadastro */
+.signup {
+    padding: 40px 20px;
+    background-color: #ffd2d5;
+    text-align: center;
+}
+
+.signup h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.signup form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup label {
+    font-size: 16px;
+    text-align: left;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b11925;
+    border-radius: 5px;
+}
+
+.signup button {
+    padding: 15px;
+    background-color: #b11925;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.signup button:hover {
+    background-color: #f85e6b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b11925;
+    color: white;
+    margin-top: 40px;
+}
+
